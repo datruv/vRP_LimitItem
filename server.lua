@@ -33,7 +33,7 @@ function ch_give(idname, player, choice)
                     end
                     local names = vRP.getItemName(idname) or "인투디언노운"
                     vRP.basicLog("logs/sendItem.txt", user_id .. " to " .. nuser_id .. " | " .. idname .. " | " .. amount)
-                    sendToDiscord_item(65280, "아이템 선물로그", "**" .. my_name .. "(" .. user_id .. ")님이 " .. nuser_name .. "(" .. nuser_id .. ")님에게 " .. vRP.getItemName(idname) .. " " .. comma_value(amount) .. "개를 선물하였습니다.**", os.date("전달일시 : %Y년 %m월 %d일 %H시 %M분 %S초 | Made By MONEKY"))
+                    sendToDiscord_item(65280, "아이템 선물로그", "**" .. my_name .. "(" .. user_id .. ")님이 " .. nuser_name .. "(" .. nuser_id .. ")님에게 " .. vRP.getItemName(idname) .. " " .. comma_value(amount) .. "개를 선물하였습니다.**", os.date("전달일시 : %Y년 %m월 %d일 %H시 %M분 %S초 | Made By dev_ruv"))
                     vRPclient.playAnim(player, {true, {{"mp_common", "givetake1_a", 1}}, false})
                     vRPclient.playAnim(nplayer, {true, {{"mp_common", "givetake2_a", 1}}, false})
                   else
